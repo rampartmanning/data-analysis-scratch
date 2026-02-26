@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# DAS - tmp work directory (in-progress research, cache, raw data)
+tmp/
+# Vue3 UI build dependencies
+ui/node_modules/
