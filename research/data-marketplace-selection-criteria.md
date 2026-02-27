@@ -126,37 +126,54 @@ APPROVED       ──── Add to our distribution list
 
 ---
 
-## Assessment of Known Marketplaces
+## Assessment of Known Marketplaces (Updated 2026-02-27)
 
-### Primary Marketplaces (Large-Scale Growth)
+> All "INVESTIGATE" items from the original assessment have been resolved through deep research.
+
+### Dataset Marketplaces — All Pass
 
 | Platform | API-Managed | Generalist | Traction | No Fees | Verdict |
 |----------|-------------|------------|----------|---------|---------|
 | AWS Data Exchange | Yes — Catalog API, Data Exchange API, CLI | Yes | Yes — 3,500+ products, 300+ providers | Yes — 3% commission only | **Pass** |
 | Snowflake Marketplace | Yes — SQL API (`CREATE LISTING`) | Yes | Yes — 2,700+ listings, 670+ providers | Yes — 0% commission | **Pass** |
-| Databricks Marketplace | Partial — Provider Console, but no public listing API documented | Yes | Yes — 2,200+ listings, 230+ providers | Yes — 0% fee | **Investigate API** |
+| Databricks Marketplace | Yes — REST API, Python SDK (`databricks-sdk`), CLI. Full CRUD for listings, files, exchanges, provider profiles. | Yes | Yes — 2,200+ listings, 230+ providers | Yes — 0% fee | **Pass (confirmed)** |
 | Google Analytics Hub | Yes — REST API, gcloud CLI, Terraform | Yes | Moderate — "underrated", lower adoption | Yes — 2–3% commission | **Pass (weak traction)** |
+| Azure Marketplace | Yes — Partner Center APIs, SaaS Fulfillment APIs v2 | Yes — 58,000+ products | Yes — massive enterprise buyer base | Yes — 3% flat fee | **Pass (new addition)** |
 | Narrative.io | Yes — platform APIs for data ingestion and product management | Yes | Moderate — buyer base skews AdTech | Yes — 0% from seller | **Pass** |
 
-### Bootstrap Marketplaces
+### API Marketplaces — Pass (Different Delivery Model)
 
 | Platform | API-Managed | Generalist | Traction | No Fees | Verdict |
 |----------|-------------|------------|----------|---------|---------|
-| Dewey Data | No — Dewey manages listings for you (no self-service API) | Yes | Yes — ~30 providers, named academic buyers | Yes — revenue share only | **Conditional pass** — no API but they do the work for you |
-| Datarade | Investigate — listing management may be portal-only | Yes (500+ categories) | Yes — 2,600+ providers, 120K monthly visitors | Yes — commission on deals only | **Investigate API** |
-| Nomad Data | Investigate | Yes | Yes — 2,500+ sources | Yes — zero fees | **Investigate API** |
-| Opendatabay | Investigate — appears portal-based | Yes | Unverified — newer platform | Yes — 5–30% commission | **Investigate traction + API** |
-| Nasdaq Data Link | Yes — well-documented API (Quandl heritage) | No — finance-focused | Yes — ~950K users, ~250 premium datasets | Yes — revenue share | **Fail (not generalist)** |
-| Eagle Alpha | No — lead-gen model, introductions are manual | Partial — alt data broadly | Yes — 2,500+ products | Yes — zero fees | **Fail (no API management)** |
-| Neudata | No — scouting/introduction model | Partial — alt + traditional data | Yes — 2,000 vendors, 1,000+ buyers | Yes — zero fees | **Fail (no API management)** |
-| Data & Sons | Investigate | Yes | Unverified — limited traction evidence | Yes | **Investigate traction** |
-| Defined.ai | Investigate | Partial — AI training data | Yes — growing fast (1,200% marketplace expansion 2025) | Yes — revenue share | **Investigate API + generalist fit** |
+| RapidAPI | Yes — full provider tooling | Yes — 35,000+ APIs, 30+ categories | Very strong — 4M+ devs, Nokia-acquired | Yes — 20–25% commission | **Pass** |
+| APILayer | Yes — providers host APIs, platform handles billing | Yes — 75+ curated APIs | Moderate — established since 2022 | Yes — 15% commission | **Pass** |
+
+### Conditional Pass
+
+| Platform | API-Managed | Generalist | Traction | No Fees | Verdict |
+|----------|-------------|------------|----------|---------|---------|
+| Dewey Data | No API (white-glove managed service — they do everything) | Yes | Yes — ~30 providers, MIT/Stanford buyers | Yes — revenue share only | **Conditional** — meets spirit of criterion 1 |
+
+### Failed — Investigated and Rejected
+
+| Platform | Failure Reason | Evidence |
+|----------|---------------|----------|
+| Datarade | No provider API; requires Monda ($6K+/yr) for programmatic access | Monda subscription = participation fee; API undocumented |
+| Nomad Data | No API (email-only lead-gen); thin traction | $4.8M over 5+ years, ~7 employees, no independent reviews |
+| Opendatabay | No API (uploads "being developed"); no traction | 1 FTE, 46 providers, 327 datasets, overdue company accounts |
+| Data & Sons | Traction unverifiable | No independent reviews, no verifiable buyer metrics |
+| Monda | Subscription fee ($6K+/yr) | Fails criterion 4; API only on paid Professional tier |
+| Nasdaq Data Link | Not generalist (finance-only) | ~250 premium datasets, all finance/investment |
+| Eagle Alpha | No API (human introductions) | Lead-gen model, fundamentally incompatible with automation |
+| Neudata | No API (human introductions) | Same as Eagle Alpha |
+| Defined.ai | Not generalist (AI training data only) | Speech, text, image, video — not general business data |
 
 ### Key Observations
 
-- The **primary cloud marketplaces** (AWS, Snowflake, Google) all pass on API management — this is expected, they're built for enterprise automation.
-- **Databricks** needs investigation on whether listing management can be fully API-driven or requires the Provider Console GUI.
-- The **bootstrap marketplaces** mostly fail or need investigation on the API criterion — smaller platforms tend to have portal-based workflows.
+- **All major cloud marketplaces pass** — AWS, Snowflake, Databricks (confirmed), Google, Azure, and Narrative.io all have full provider APIs.
+- **Databricks is confirmed** — full REST API, Python SDK, and CLI for listing lifecycle. Was previously "investigate", now resolved.
+- **Azure Marketplace is a new addition** — passes all four criteria with massive buyer reach. Was previously excluded as "fragmented" but re-evaluated.
+- **The bootstrap gap is real** — smaller platforms universally fail on API management and/or traction. The data marketplace ecosystem is bifurcated: big cloud platforms (API, traction, approval needed) vs. small platforms (low barrier, no API, no traction).
 - **Dewey Data** is an interesting exception: it fails the API test technically, but because Dewey manages everything for you, there's no manual work on our side. The "no friction" goal is met through a different mechanism (they absorb the friction).
 - The **lead-gen platforms** (Eagle Alpha, Neudata) inherently fail API management because their model is human introductions, not automated listing management. They're still worth using for zero-cost lead generation, but they don't qualify as "marketplaces" under these criteria.
 

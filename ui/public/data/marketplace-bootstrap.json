@@ -1,87 +1,72 @@
 {
   "topic": "Marketplace Bootstrap Strategy",
-  "generated_at": "2026-02-27T00:00:00+00:00",
+  "generated_at": "2026-02-27T12:00:00+00:00",
   "metadata": {
-    "platforms_listed": 10,
-    "selection_criteria": "Low barrier to entry, paid/commercial, general-purpose, suitable for a startup with no track record",
+    "version": 2,
+    "platforms_evaluated": 14,
+    "platforms_passed": 5,
+    "selection_criteria": "API-managed, generalist, demonstrated traction, no fees (see Marketplace Selection Criteria)",
     "full_report": "research/data-marketplaces-bootstrap.md"
   },
   "findings": [
     {
-      "title": "Bootstrap Strategy Overview",
-      "summary": "Build credibility on smaller platforms before approaching the big cloud marketplaces (AWS, Snowflake, Databricks, Google).",
-      "tags": ["Strategy"],
-      "details": "RECOMMENDED SEQUENCE\n\nWeek 1\u20132 (zero cost, immediate)\n  Datarade       \u2192 List all data products (free, broad reach)\n  Nomad Data     \u2192 Register + onboarding meeting (free, 100% revenue)\n  Eagle Alpha    \u2192 List if any finance-relevant data (free)\n\nWeek 2\u20134 (low effort, build revenue)\n  Dewey Data     \u2192 Submit partnership form (they do all the work)\n  Opendatabay    \u2192 Upload + list datasets (self-service)\n  Neudata        \u2192 List vendor profile (free)\n\nMonth 2\u20133 (build track record)\n  Nasdaq Data Link \u2192 Apply if finance-relevant data exists\n  Defined.ai       \u2192 Apply if AI-training-relevant data exists\n  Data & Sons      \u2192 List as supplementary channel\n\nMonth 3+ (armed with credibility)\n  Apply to Snowflake, AWS, Databricks, Google\n  Cite Dewey/Datarade customers + transaction history\n  Evaluate Monda for multi-marketplace management"
+      "title": "v2: Criteria Applied Rigorously",
+      "summary": "Original bootstrap list was aspirational. This version applies the four hard criteria. Only 5 of 14 evaluated platforms pass or conditionally pass.",
+      "tags": ["Overview"],
+      "details": "PASS (dataset marketplaces):\n  Azure Marketplace         3% fee, full Partner Center API, massive buyer base\n  Databricks Marketplace    0% fee, full REST/SDK/CLI API (confirmed)\n\nPASS (API marketplaces):\n  RapidAPI                  20\u201325% fee, 4M+ devs, largest API marketplace globally\n  APILayer                  15% fee, curated quality, moderate traction\n\nCONDITIONAL PASS:\n  Dewey Data                No API, but they manage everything for you\n\nFAIL (9 platforms):\n  Datarade       \u2192 No API without Monda ($6K+/yr subscription)\n  Nomad Data     \u2192 No API (email-only lead-gen), thin traction\n  Opendatabay    \u2192 No API (uploads still in development), 1-person company\n  Data & Sons    \u2192 Traction unverifiable\n  Monda          \u2192 $6K+/yr subscription fee\n  Nasdaq DL      \u2192 Finance-only (not generalist)\n  Eagle Alpha    \u2192 No API (human introductions)\n  Neudata        \u2192 No API (human introductions)\n  Defined.ai     \u2192 AI training data only (not generalist)"
     },
     {
-      "title": "Dewey Data (formerly SafeGraph)",
-      "summary": "Curated marketplace that handles everything: sales, delivery, support, compliance. Strong precedent of onboarding small/single-founder providers. Listings live in <2 weeks.",
+      "title": "Azure Marketplace \u2014 NEW ADDITION",
+      "summary": "Full Partner Center API, 3% flat fee, 58,000+ products, massive enterprise buyer base. Integrated with Azure consumption commitments (MACC drawdown).",
+      "url": "https://azure.microsoft.com/en-us/partners/marketplace",
+      "tags": ["PASS", "Dataset Marketplace"],
+      "details": "API: Partner Center APIs + SaaS Fulfillment APIs v2. Programmatic offer creation, listing management, billing.\nGENERALIST: Yes \u2014 58,000+ products across all categories.\nTRACTION: Massive \u2014 enterprise buyers across every sector.\nFEES: 3% flat store service fee. No upfront listing fees.\nAPPROVAL: Must join Microsoft Partner Network (free tier available).\nDELIVERY: SaaS with API delivery, or Azure Data Share for dataset access.\n\nWas excluded from original primary list as \"fragmented, smaller data catalog\" vs AWS/Snowflake. But it passes all 4 criteria and has massive buyer reach. Belongs in our distribution strategy."
+    },
+    {
+      "title": "Databricks Marketplace \u2014 UPGRADED from \"investigate\"",
+      "summary": "Full programmatic API confirmed: REST API, Python SDK, CLI. Full CRUD for listings, files, exchanges, provider profiles. 0% fee.",
+      "url": "https://www.databricks.com/product/marketplace",
+      "tags": ["PASS", "Dataset Marketplace"],
+      "details": "API CONFIRMED:\n  REST: /api/2.0/marketplace-provider/listings (create, get, list, update, delete)\n  SDK:  w.provider_listings.create(), .update(), .delete() (databricks-sdk Python)\n  CLI:  databricks provider-listings create --json '...'\n\nAlso covers: provider files (icons, notebooks), exchanges, provider profiles, analytics dashboards.\nDelta Sharing shares fully managed via Unity Catalog API.\n\nFull automation pipeline:\n  Terraform \u2192 Unity Catalog + schemas + tables\n  Pipeline  \u2192 ETL populates tables\n  SDK       \u2192 CREATE SHARE + ADD TABLE\n  SDK       \u2192 provider_files.create() (icon, notebooks)\n  SDK       \u2192 provider_listings.create() (listing ref share)\n  Monitor   \u2192 system.marketplace.listing_funnel_events"
+    },
+    {
+      "title": "RapidAPI \u2014 API Delivery Channel",
+      "summary": "Largest API marketplace globally. 4M+ developers, 175 countries, 35,000+ APIs. 20\u201325% commission. Best for data-as-API products.",
+      "url": "https://rapidapi.com",
+      "tags": ["PASS", "API Marketplace"],
+      "details": "API: Full provider tooling \u2014 documentation generation, tiered pricing plans, billing automation, key management, analytics.\nGENERALIST: Yes \u2014 30+ categories.\nTRACTION: Very strong \u2014 billions of API calls/month. Acquired by Nokia (Nov 2024).\nFEES: 20\u201325% commission. No upfront costs.\nPAYOUT: PayPal only.\n\nSTRATEGIC FIT: If we build data products with API access (aligns with \"agent-ready distribution\" thesis), RapidAPI gives 4M+ developer reach at zero upfront cost. We'd need an API layer, but we're likely building that anyway.\n\nCAVEATS: Nokia acquisition could change terms. High commission. PayPal-only payouts."
+    },
+    {
+      "title": "APILayer \u2014 API Delivery Channel",
+      "summary": "Curated API marketplace. 75+ APIs, 15% commission, lower than RapidAPI. Providers must host on approved cloud platforms. Monthly payouts.",
+      "url": "https://apilayer.com",
+      "tags": ["PASS", "API Marketplace"],
+      "details": "API: Providers host their own APIs; APILayer handles key management, payment collection, customer acquisition.\nGENERALIST: Yes \u2014 AI/ML, finance, geolocation, and more.\nTRACTION: Moderate \u2014 curated (quality over quantity). Active developer community. Established since 2022.\nFEES: 15% commission. No upfront costs. Monthly payouts.\nHOSTING: Must host on AWS, GCP, Azure, DigitalOcean, Scaleway, or Hetzner.\n\nLower commission than RapidAPI (15% vs 20\u201325%) but smaller audience. Curation means they may reject submissions \u2014 could work in our favour once listed."
+    },
+    {
+      "title": "Dewey Data \u2014 CONDITIONAL PASS",
+      "summary": "No API, but white-glove managed service: they handle listing creation, sales, delivery, contracts, support, compliance. Provider sets up one data feed (~30 min) and that's it.",
       "url": "https://www.deweydata.io",
-      "tags": ["Tier 1: Marketplace", "Low Barrier"],
-      "details": "MODEL: Curated two-sided marketplace. Dewey handles all sales, delivery, and support.\nBARRIER: Low \u2014 partnership form, no engineering needed, listings live in <2 weeks.\nREVENUE: Revenue share (% undisclosed). Monthly usage reports + citation tracking.\nBUYERS: Academic institutions (MIT, Stanford, NYU, Berkeley, etc.)\nCATEGORIES: Real estate, mobility, labor, consumer, corporate intelligence, government, financial, weather, technology.\n\nSMALL PROVIDER EVIDENCE:\n\u2022 LobbyingData.com \u2014 single founder\n\u2022 NatureQuant \u2014 small ML + geospatial company\n\u2022 Capology \u2014 niche football salary data\n\u2022 ~30 total providers including RentHub, ClimateCheck, REsimplifi\n\nACTION: Submit partnership form at deweydata.io/partner-with-dewey"
+      "tags": ["CONDITIONAL", "Managed Service"],
+      "details": "API: None. All APIs (Python, R, CLI) are consumer-facing only.\nWHY CONDITIONAL: Dewey absorbs all operational friction. Provider responsibilities:\n  \u2022 One-time: set up data feed (S3/Snowflake/SFTP) ~30 min\n  \u2022 Ongoing: keep producing data into same feed location\n  \u2022 That's it. Dewey does the rest.\n\nDEWEY HANDLES: listing creation, metadata, sales, delivery, contracts, researcher support, compliance, reporting, citation tracking.\nGENERALIST: Yes \u2014 real estate, mobility, labor, consumer, corporate, government, financial, weather, tech.\nTRACTION: ~30 providers, MIT/Stanford/NYU/Berkeley as buyers.\nFEES: Revenue share only (% undisclosed).\nSMALL PROVIDERS: LobbyingData.com (single founder), NatureQuant, Capology.\n\nLIMITATION: Schema changes require manual coordination. No self-service control. Academic buyers = lower revenue per sale.\n\nMeets the spirit of criterion 1 (zero friction) but not the letter (no API)."
     },
     {
-      "title": "Opendatabay",
-      "summary": "Open data marketplace focused on AI/LLM datasets. Self-service signup, set your own price, 5\u201330% commission with payouts within 30 days.",
-      "url": "https://www.opendatabay.com",
-      "tags": ["Tier 1: Marketplace", "Very Low Barrier"],
-      "details": "MODEL: Open marketplace. Self-service upload and pricing.\nBARRIER: Very low \u2014 sign up, upload data, set price, list.\nREVENUE: 5\u201330% commission (sliding scale). Payouts within 30 days.\nBUYERS: AI/ML teams, researchers, analytics buyers.\nCATEGORIES: General-purpose \u2014 AI, research, analytics, any data type.\nREQUIREMENTS: Must be original creator or have rights to data.\n\nACTION: Sign up and list datasets immediately once ready."
+      "title": "Failed Platforms \u2014 Evidence",
+      "summary": "9 platforms evaluated and rejected with specific evidence for each failure.",
+      "tags": ["FAIL", "Evidence"],
+      "details": "DATARADE \u2014 No provider API. Must use Monda ($6K+/yr subscription + 20\u201330% commission) for any programmatic access. Monda API undocumented, Professional tier only.\n\nNOMAD DATA \u2014 No API. Email-based lead-gen only. $4.8M funding over 5+ years, ~7 employees, no Series A. No independent reviews. \"4,900 providers\" is inflated (free frictionless signup).\n\nOPENDATABAY \u2014 No API. Upload features still \"being developed\" (per their docs). 1 FTE + 13 volunteers, no funding. 46 providers, 327 datasets. Overdue company accounts at UK Companies House. 17 GitHub stars total.\n\nDATA & SONS \u2014 No independent reviews, no verifiable buyer metrics, no press coverage. Cannot confirm real transactions.\n\nMONDA \u2014 ~$6K+/yr subscription (annual commitment). API only on Professional tier. No public API docs. Does not integrate with AWS Data Exchange.\n\nNASDAQ DATA LINK \u2014 Finance/investment only. ~250 premium datasets. Not generalist.\n\nEAGLE ALPHA / NEUDATA \u2014 Human introduction models. No listing management API. Fundamentally incompatible with automation.\n\nDEFINED.AI \u2014 AI training data only (speech, text, image, video). Not general-purpose business data."
     },
     {
-      "title": "Data & Sons",
-      "summary": "\"eBay of data\" \u2014 open marketplace where anyone can list any dataset. Very low barrier. Reviews data for privacy compliance before publishing.",
-      "url": "https://www.dataandsons.com",
-      "tags": ["Tier 1: Marketplace", "Very Low Barrier"],
-      "details": "MODEL: Open marketplace \u2014 buy, sell, share any dataset.\nBARRIER: Very low \u2014 anyone can list. Platform reviews for privacy compliance.\nREVENUE: Transaction-based (details on signup).\nBUYERS: General public, researchers, businesses.\nCATEGORIES: Completely general-purpose.\nFOUNDED: 2016 (Tampa, FL), launched 2017.\n\nCAVEAT: Buyer pool may be smaller than enterprise platforms.\n\nACTION: List datasets as supplementary channel."
+      "title": "Key Insight: The Bootstrap Gap",
+      "summary": "There is no rich ecosystem of small, easy-entry, API-managed data marketplaces. The landscape is sharply bifurcated: big cloud platforms (API, traction, but need approval) vs small platforms (low barrier, but portal-based and low traction).",
+      "tags": ["Analysis"],
+      "details": "The bootstrap strategy therefore shifts from \"build credibility on small platforms first\" to:\n\n1. APPLY TO EVERYTHING IN PARALLEL \u2014 approval timelines are undefined, start early\n2. USE NARRATIVE.IO AS EASIEST ON-RAMP \u2014 self-service, API-managed, no approval gate\n3. USE DEWEY FOR ACADEMIC CREDIBILITY \u2014 they do all the work, small provider precedent\n4. BUILD API DELIVERY FOR RAPIDAPI/APILAYER \u2014 different channel, zero approval friction\n5. DON'T WAIT FOR BOOTSTRAP CREDIBILITY \u2014 just apply and see who approves first"
     },
     {
-      "title": "Defined.ai",
-      "summary": "AI training data marketplace. Curated seller program with a high quality bar (30% acceptance rate). 65% revenue growth in 2025. ISO 27001, GDPR/HIPAA compliant.",
-      "url": "https://defined.ai",
-      "tags": ["Tier 1: Marketplace", "Medium Barrier"],
-      "details": "MODEL: AI training data marketplace with curated seller program.\nBARRIER: Medium \u2014 application required, only 30% of applicants approved.\nREVENUE: Revenue share (details on acceptance).\nBUYERS: AI/ML companies, enterprises, tech innovators.\nCATEGORIES: Speech, text, image, video, multimodal \u2014 any AI training data.\nGROWTH: 65% revenue growth and 1,200% marketplace expansion in 2025.\nCOMPLIANCE: ISO 27001/27701, GDPR, HIPAA.\n\nACTION: Apply if data products can be positioned for AI training use cases."
-    },
-    {
-      "title": "Nasdaq Data Link (formerly Quandl)",
-      "summary": "Curated marketplace with strong brand credibility. Nasdaq handles sales to ~950K financial professionals. Selective (~250 premium datasets). Application-based onboarding.",
-      "url": "https://data.nasdaq.com",
-      "tags": ["Tier 1: Marketplace", "Medium-High Barrier"],
-      "details": "MODEL: Curated two-sided marketplace. Nasdaq handles sales and distribution.\nBARRIER: Medium-high \u2014 application + quality review. Selective (~250 premium datasets total).\nREVENUE: Revenue share (% undisclosed). Nasdaq sells on your behalf.\nBUYERS: ~950K financial professionals (hedge funds, asset managers, quant researchers).\nCATEGORIES: Financial/alternative data: economic indicators, geospatial, sentiment, ESG, commodities.\n\nSMALL PROVIDER EVIDENCE:\n\u2022 Sharadar \u2014 independent research firm, successful small provider\n\nCAVEAT: Only for datasets with clear financial/investment relevance. Highly selective.\nVALUE: Nasdaq brand association = very strong credibility signal for cloud marketplace applications.\n\nACTION: Apply via nasdaq.com/solutions/data/alternative/monetize-your-data"
-    },
-    {
-      "title": "Datarade",
-      "summary": "B2B data directory with 2,600+ providers and 120K+ monthly visitors. Free to list, commission only on closed deals. 500+ categories. Self-service.",
-      "url": "https://datarade.ai",
-      "tags": ["Tier 2: Lead-Gen", "Zero Cost"],
-      "details": "MODEL: B2B data directory/marketplace. Buyers express interest, Datarade connects them to you. You handle the sale.\nBARRIER: Very low \u2014 self-service listing, SEO-friendly profile page, KYC verification.\nREVENUE: Commission on closed deals only (% undisclosed). Free to list.\nBUYERS: 120K+ monthly visitors. B2B enterprises across all sectors.\nCATEGORIES: 500+ categories. Completely general-purpose.\nPROVIDERS: 2,600+ listed including many small/niche companies.\n\nNO REASON NOT TO LIST \u2014 zero cost, broad reach, SEO presence + inbound leads.\n\nACTION: List immediately at datarade.ai/company/contact/list-your-data"
-    },
-    {
-      "title": "Nomad Data",
-      "summary": "AI-powered matching platform. Zero fees, zero commission \u2014 providers keep 100% of revenue. 2,500+ data sources. Buyers search anonymously; you choose which leads to engage.",
-      "url": "https://www.nomad-data.com",
-      "tags": ["Tier 2: Lead-Gen", "Zero Cost"],
-      "details": "MODEL: AI-powered matching. Buyers search anonymously; providers choose which leads to engage.\nBARRIER: Low \u2014 free to list. Requires initial onboarding meeting.\nREVENUE: Zero fees, zero commission. Negotiate directly with buyers, keep 100%.\nBUYERS: Enterprise data buyers.\nCATEGORIES: General-purpose across all industries.\nPROVIDERS: 2,500+ data sources listed.\nFOUNDED: 2020 (NYC).\n\nACTION: Register and complete onboarding meeting."
-    },
-    {
-      "title": "Eagle Alpha",
-      "summary": "Alternative data aggregator since 2012. Free vendor profiles, zero commission, direct introductions to institutional investors. Also provides compliance consulting and pricing help.",
-      "url": "https://www.eaglealpha.com",
-      "tags": ["Tier 2: Lead-Gen", "Zero Cost"],
-      "details": "MODEL: Alternative data aggregator. Free vendor profiles. Direct buyer introductions.\nBARRIER: Low \u2014 free listing, no commission.\nREVENUE: Zero fees, zero commission. Also provides compliance consulting + pricing strategy help.\nBUYERS: Institutional investors (hedge funds, asset managers).\nCATEGORIES: Alternative data: geospatial, web, transaction, ESG, sentiment, economic.\nPROVIDERS: 2,500+ data products listed.\n\nCAVEAT: Data must have investment-relevant signal. But free to list = no downside.\n\nACTION: List if producing any data with investment/financial relevance."
-    },
-    {
-      "title": "Neudata",
-      "summary": "Independent data scouting platform. Free listing, no commission, no revenue sharing. Vendors report an average of 19.8 qualified buyer introductions per year.",
-      "url": "https://www.neudata.co",
-      "tags": ["Tier 2: Lead-Gen", "Zero Cost"],
-      "details": "MODEL: Data scouting platform. Connects vendors with qualified buyers. Independent (no conflicts).\nBARRIER: Low \u2014 free listing, no commission.\nREVENUE: Zero fees, zero commission, zero revenue sharing.\nBUYERS: 1,000+ qualified data buyers (investment firms, corporates).\nCATEGORIES: Alternative + traditional data.\nPROVIDERS: ~2,000 vendors listed.\nRESULTS: Average 19.8 qualified buyer intros per year per vendor.\nFOUNDED: 2016.\n\nACTION: List alongside Eagle Alpha for maximum financial-sector visibility."
-    },
-    {
-      "title": "Monda",
-      "summary": "\"Shopify for data products.\" Create listings once, syndicate to Databricks, Google Cloud, SAP Datasphere, Datarade and more from a single account. 500+ companies use it.",
-      "url": "https://www.monda.ai",
-      "tags": ["Tier 3: Distribution Tool"],
-      "details": "MODEL: Multi-marketplace distribution hub. Create listings once, syndicate everywhere.\nBARRIER: Subscription plan (pricing not public). Designed for DaaS startups.\nREVENUE: You keep your revenue; Monda charges a platform subscription.\nSYNDICATION: Databricks, Google Cloud, SAP Datasphere, Datarade, and more.\nUSERS: 500+ companies.\n\nDoes not store your data \u2014 listings point to your own storage.\nNo engineering required.\n\nSTRATEGIC VALUE: Solves the multi-marketplace management problem once you have 5+ data products across multiple platforms.\n\nACTION: Evaluate once ready to scale across cloud marketplaces."
+      "title": "Revised Recommended Sequence",
+      "summary": "Updated rollout plan based on what actually passes the criteria.",
+      "tags": ["Action Plan"],
+      "details": "IMMEDIATE (zero cost)\n  Narrative.io        Self-service, no approval gate, API-managed\n  Dewey Data          Submit partnership form (they do all the work)\n\nMONTH 1\u20132 (cloud marketplaces \u2014 apply in parallel)\n  AWS Data Exchange   Submit qualification request\n  Snowflake           Create provider profile, begin paid listing vetting\n  Databricks          Apply to Data Partner Program\n  Google Analytics Hub  Enable API, create exchange (free listings first)\n  Azure Marketplace   Join Microsoft Partner Network, submit listing\n\nMONTH 2\u20133 (API marketplaces \u2014 if building API delivery)\n  RapidAPI            List data APIs (20\u201325% commission, 4M+ devs)\n  APILayer            List data APIs (15% commission, curated)\n\nONGOING\n  Re-evaluate Datarade if they launch a free provider API\n  Monitor Monda pricing for commission-only tier\n  Watch for new marketplaces meeting all 4 criteria"
     }
   ]
 }
