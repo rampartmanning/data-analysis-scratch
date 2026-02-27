@@ -1,0 +1,1344 @@
+{
+  "topic": "Data Marketplaces Research",
+  "generated_at": "2026-02-26T18:29:50.584896+00:00",
+  "metadata": {
+    "total_platforms": 148,
+    "categories": 4,
+    "source": "Web research + training knowledge (May 2025 cutoff)",
+    "full_report": "research/data-marketplaces.md"
+  },
+  "findings": [
+    {
+      "title": "AWS Data Exchange",
+      "summary": "Both - free and paid datasets available \u2014 Global - available in multiple AWS regions worldwide",
+      "url": "https://aws.amazon.com/data-exchange/",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: Approximately 3,500+ data products from 300+ data providers (as of early 2025, estimated). One of the largest cloud-native data marketplaces."
+    },
+    {
+      "title": "Snowflake Marketplace",
+      "summary": "Both - many free datasets available alongside paid/commercial listings \u2014 Global - available across all Snowflake cloud regions (AWS, Azure, GCP)",
+      "url": "https://www.snowflake.com/en/data-cloud/marketplace/",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: Approximately 2,000+ listings from 500+ data providers (as of early 2025, estimated). Rapidly growing. Snowflake reports thousands of data shares happening daily across its platform."
+    },
+    {
+      "title": "Databricks Marketplace",
+      "summary": "Both - includes free open datasets and paid commercial data products \u2014 Global - available across Databricks deployments on AWS, Azure, and GCP",
+      "url": "https://www.databricks.com/product/marketplace",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: Approximately 1,500+ listings (as of early 2025, estimated). Growing rapidly since GA launch. Includes data products from major providers like Nasdaq, Foursquare, and others."
+    },
+    {
+      "title": "Azure Data Marketplace (Microsoft Azure Marketplace - Data category) / Azure Open Datasets",
+      "summary": "Both - Azure Open Datasets are free; Azure Marketplace data products include both free and paid offerings \u2014 Global, with a strong emphasis on US government and public datasets. Azure Open Datasets includes international data from multiple countries.",
+      "url": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps?category=data",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: Azure Open Datasets: approximately 100+ curated public datasets. Azure Marketplace (data category): hundreds of data product listings from numerous providers. The broader Azure Marketplace contains tens of thousands of total listings across all categories."
+    },
+    {
+      "title": "Google Cloud Analytics Hub",
+      "summary": "Both - many free public datasets via Google BigQuery Public Datasets; Analytics Hub supports both free and commercial data exchanges \u2014 Global - available in all Google Cloud regions. BigQuery Public Datasets lean toward US-centric sources but include significant international data.",
+      "url": "https://cloud.google.com/analytics-hub",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: BigQuery Public Datasets: 200+ datasets. Analytics Hub: growing number of commercial and internal listings (exact count not widely published). Google Dataset Search indexes millions of datasets across the web (but is a search engine, not a marketplace)."
+    },
+    {
+      "title": "Oracle Data Marketplace",
+      "summary": "Both - includes free and paid data product listings \u2014 Global - available across Oracle Cloud regions. Strong presence in enterprise markets in North America, Europe, and Asia Pacific.",
+      "url": "https://cloud.oracle.com/marketplace",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: The Oracle Cloud Marketplace overall has thousands of listings, but the data-specific category is smaller compared to AWS or Snowflake - estimated hundreds of data-related listings. Oracle's data marketplace is less prominent as a standalone offering compared to competitors."
+    },
+    {
+      "title": "SAP Data Marketplace",
+      "summary": "Both - includes free sample/open data and commercial paid data products \u2014 Global - with a strong presence in Europe (SAP's home market) and enterprise markets worldwide",
+      "url": "https://www.sap.com/products/technology-platform/datasphere/data-marketplace.html",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: Estimated hundreds of data product listings. Growing since SAP Datasphere rebrand and investment. Smaller than AWS or Snowflake marketplaces but highly focused on enterprise and business data."
+    },
+    {
+      "title": "IBM Data Exchange / IBM Data Asset eXchange (DAX) / IBM Environmental Intelligence Suite Data",
+      "summary": "Primarily free and open-source (IBM Data Asset eXchange). IBM's commercial data offerings are available through IBM Cloud and IBM Environmental Intelligence Suite. \u2014 Global - open datasets are accessible worldwide. Commercial offerings available in IBM Cloud regions.",
+      "url": "https://developer.ibm.com/exchanges/data/",
+      "tags": [
+        "Cloud & Enterprise Data Market"
+      ],
+      "details": "Scale: IBM Data Asset eXchange: approximately 30-50 curated open datasets (smaller, highly curated collection). IBM's commercial data offerings (Weather Company, etc.) serve thousands of enterprise customers. The scale is more about data quality and curation than breadth of listings."
+    },
+    {
+      "title": "Ocean Protocol",
+      "summary": "Both - free to list, transaction fees apply; OCEAN token used for staking and transactions \u2014 Global",
+      "url": "https://oceanprotocol.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Thousands of datasets listed on Ocean Market. OCEAN token has been a top-200 cryptocurrency by market cap. Active developer community. Total Value Locked has fluctuated with crypto markets."
+    },
+    {
+      "title": "Streamr",
+      "summary": "Both - free tier available, paid for premium streams and higher throughput \u2014 Global",
+      "url": "https://streamr.network",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Thousands of active streams. Network of broker nodes globally distributed. Community of developers building on the protocol. DATA token is a smaller-cap cryptocurrency."
+    },
+    {
+      "title": "Harbr (Harbr Data Commerce)",
+      "summary": "Paid - enterprise B2B platform \u2014 Global, primarily UK and US enterprise market",
+      "url": "https://www.harbr.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Enterprise clients include financial data firms and media companies. Relatively niche B2B platform. Not a public marketplace - provides infrastructure for clients to build their own."
+    },
+    {
+      "title": "CARTO Data Observatory",
+      "summary": "Both - some free/open datasets accessible; premium datasets require CARTO subscription or additional licensing \u2014 Global coverage, strong in US and Europe",
+      "url": "https://carto.com/spatial-data-catalog",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Thousands of curated spatial datasets from dozens of providers. Covers 190+ countries for some dataset categories."
+    },
+    {
+      "title": "Knoema",
+      "summary": "Both - free access to public/open statistical data; premium plans for advanced features and proprietary datasets \u2014 Global - aggregates data from 200+ countries. Sources include World Bank, IMF, UN, national statistical offices, and proprietary sources.",
+      "url": "https://knoema.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Claims billions of data points from thousands of sources covering virtually every country. One of the largest aggregators of public statistical data."
+    },
+    {
+      "title": "Statista",
+      "summary": "Both - limited free access to some statistics; full access requires paid subscription \u2014 Global coverage with particularly strong data for US, Europe, and major economies. Offices in Hamburg, New York, London, and other cities.",
+      "url": "https://www.statista.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 1,000,000+ statistics across 80,000+ topics from 22,500+ sources. Major global platform for business statistics. Over 1 billion annual page views claimed."
+    },
+    {
+      "title": "data.ai (formerly App Annie)",
+      "summary": "Both - limited free tier (app rankings, basic estimates); paid subscriptions for detailed analytics \u2014 Global - covers iOS App Store and Google Play across all countries",
+      "url": "https://www.data.ai",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Tracks millions of apps across iOS and Google Play. Estimates for 150+ countries. Previously the largest independent mobile analytics provider."
+    },
+    {
+      "title": "Similarweb",
+      "summary": "Both - free browser extension and limited web lookups; paid platform subscriptions \u2014 Global - estimates for websites and apps worldwide",
+      "url": "https://www.similarweb.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Estimates traffic for 100M+ websites. Data from panel of hundreds of millions of devices, ISP partnerships, and direct measurement. Major global digital intelligence provider."
+    },
+    {
+      "title": "BattleFin",
+      "summary": "Paid - enterprise/institutional \u2014 Primarily US and Europe (financial centers)",
+      "url": "https://www.battlefin.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Catalogs hundreds of alternative data providers. Events attract major hedge funds and asset managers. Niche but influential in alternative data ecosystem."
+    },
+    {
+      "title": "Eagle Alpha",
+      "summary": "Paid - enterprise/institutional \u2014 Global, primarily serving US and European financial institutions",
+      "url": "https://eaglealpha.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Catalogs and evaluates hundreds of alternative data providers. Serves institutional investors globally. Published influential annual alternative data surveys."
+    },
+    {
+      "title": "Common Crawl",
+      "summary": "Free - entirely open and free to use \u2014 Global web - crawls billions of pages across all languages and countries",
+      "url": "https://commoncrawl.org",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Each monthly crawl contains 3-5+ billion web pages. Total archive spans 10+ years of monthly crawls. Hundreds of petabytes of total data. Used to train many of the world's largest language models."
+    },
+    {
+      "title": "Zenodo",
+      "summary": "Free - open access research data repository \u2014 Global academic/research community",
+      "url": "https://zenodo.org",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Millions of records. One of the largest general-purpose open research data repositories. Growing rapidly as open science mandates increase."
+    },
+    {
+      "title": "Dryad",
+      "summary": "Free to access. Publishing fees for depositors (often covered by institutions or journal agreements). \u2014 Global academic community, strong in US and Europe",
+      "url": "https://datadryad.org",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Tens of thousands of curated datasets. Primarily focused on data associated with peer-reviewed publications."
+    },
+    {
+      "title": "Figshare",
+      "summary": "Both - free personal accounts with storage limits; institutional and publisher versions are paid \u2014 Global academic community",
+      "url": "https://figshare.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Millions of research outputs hosted. Used by hundreds of institutions worldwide. One of the most popular research data repositories."
+    },
+    {
+      "title": "ICPSR (Inter-university Consortium for Political and Social Research)",
+      "summary": "Both - some data freely available; full access requires institutional membership \u2014 Primarily US data, but includes international datasets. US institutional membership base.",
+      "url": "https://www.icpsr.umich.edu",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Over 16,000 studies with over 250,000 files. 800+ member institutions. One of the world's largest archives of social science data."
+    },
+    {
+      "title": "Harvard Dataverse",
+      "summary": "Free - open access repository \u2014 Global. Harvard Dataverse is the largest installation, but Dataverse software is used by dozens of institutions worldwide.",
+      "url": "https://dataverse.harvard.edu",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Harvard Dataverse alone hosts 100,000+ datasets. Dozens of other institutions run their own Dataverse installations. One of the most widely-used research data repository platforms."
+    },
+    {
+      "title": "Definitive Healthcare",
+      "summary": "Paid - enterprise subscription with limited free lookups \u2014 Primarily United States",
+      "url": "https://www.definitivehc.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers virtually all US hospitals, physician groups, and healthcare facilities. Millions of provider records. Billions of claims records analyzed."
+    },
+    {
+      "title": "IQVIA (formerly IMS Health / Quintiles IMS)",
+      "summary": "Paid - enterprise/institutional \u2014 Global - operates in 100+ countries. Particularly strong in US, Europe, Japan.",
+      "url": "https://www.iqvia.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Analyzes data from 150,000+ data suppliers. Patient-level data on over 1 billion de-identified patient records. $15B+ annual revenue (data, technology, and services combined). 86,000+ employees."
+    },
+    {
+      "title": "Zillow Data Products (ZTRAX / Zillow Research)",
+      "summary": "Both - Zillow Research data is free; ZTRAX (transaction/assessment data) was free for researchers but access has been restricted \u2014 United States (comprehensive coverage)",
+      "url": "https://www.zillow.com/research/data/",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers 100M+ US properties. ZTRAX contains hundreds of millions of transaction records. Research data covers all US metros/states."
+    },
+    {
+      "title": "Reonomy",
+      "summary": "Paid - subscription-based platform \u2014 United States - comprehensive national CRE coverage",
+      "url": "https://www.reonomy.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers 50M+ commercial and residential properties in the US. Millions of commercial property records with ownership data."
+    },
+    {
+      "title": "ATTOM Data Solutions",
+      "summary": "Paid - enterprise data licensing \u2014 United States - nationwide property data coverage",
+      "url": "https://www.attomdata.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 155M+ US residential and commercial properties. 99%+ county coverage. Billions of data points across property, transaction, and risk categories."
+    },
+    {
+      "title": "Tomorrow.io (formerly ClimaCell)",
+      "summary": "Both - free tier for basic weather API; paid plans for advanced features and data \u2014 Global coverage with minute-by-minute resolution",
+      "url": "https://www.tomorrow.io",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Global coverage. Hundreds of millions of API calls served. Backed by over $400M in venture funding. Building satellite constellation for proprietary data."
+    },
+    {
+      "title": "DTN (formerly Data Transmission Network)",
+      "summary": "Paid - enterprise/commercial subscriptions \u2014 Global, with particularly strong presence in North America",
+      "url": "https://www.dtn.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Serves thousands of enterprise clients across agriculture, energy, and transportation. Decades of historical weather and market data."
+    },
+    {
+      "title": "Replica",
+      "summary": "Paid - government/enterprise subscriptions \u2014 United States - growing metro area coverage",
+      "url": "https://replicahq.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers most major US metro areas. Used by dozens of state DOTs and metropolitan planning organizations."
+    },
+    {
+      "title": "StreetLight Data",
+      "summary": "Paid - subscription/project-based \u2014 United States and Canada primarily",
+      "url": "https://www.streetlightdata.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Processes trillions of location data points. Covers all US roads. Used by hundreds of government agencies and planning firms."
+    },
+    {
+      "title": "Lightcast (formerly Emsi Burning Glass)",
+      "summary": "Paid - enterprise subscriptions. Some free tools (e.g., Open Skills Library). \u2014 Primarily US, UK, Canada, Australia. Expanding to more countries.",
+      "url": "https://lightcast.io",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Processes billions of job postings historically. Covers millions of employer profiles. Used by thousands of educational institutions and employers."
+    },
+    {
+      "title": "Revelio Labs",
+      "summary": "Paid - enterprise subscriptions \u2014 Primarily US, growing international coverage",
+      "url": "https://www.reveliolabs.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Tracks hundreds of millions of professional profiles. Coverage of most large public and private companies in the US."
+    },
+    {
+      "title": "Hugging Face Datasets",
+      "summary": "Both - mostly free community datasets; Hugging Face Pro/Enterprise subscriptions for additional features \u2014 Global",
+      "url": "https://huggingface.co/datasets",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 100,000+ public datasets. Millions of monthly users. The de facto standard hub for ML datasets. Hosts some of the most important AI training datasets."
+    },
+    {
+      "title": "Papers with Code Datasets",
+      "summary": "Free - open index of ML datasets linked to academic papers \u2014 Global academic and research community",
+      "url": "https://paperswithcode.com/datasets",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Indexes thousands of datasets with links to papers and benchmarks. Comprehensive coverage of ML research datasets."
+    },
+    {
+      "title": "Roboflow",
+      "summary": "Both - free tier for public projects; paid plans for private projects and advanced features \u2014 Global",
+      "url": "https://roboflow.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Roboflow Universe hosts 200,000+ public computer vision datasets. Platform used by tens of thousands of developers. Rapidly growing."
+    },
+    {
+      "title": "Scale AI (Scale Data Engine / Scale Catalog)",
+      "summary": "Paid - enterprise/project-based \u2014 Global - headquartered in US with labeling workforce worldwide",
+      "url": "https://scale.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: One of the highest-valued AI infrastructure companies (~$14B valuation). Hundreds of millions in revenue. Labeled data for most major autonomous vehicle and AI companies."
+    },
+    {
+      "title": "Ocean Protocol Predictoor",
+      "summary": "Paid - uses OCEAN tokens for predictions \u2014 Global (blockchain-based)",
+      "url": "https://predictoor.ai",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Newer product, still building adoption. Part of the broader Ocean Protocol ecosystem."
+    },
+    {
+      "title": "Filecoin / Filecoin Data Economy",
+      "summary": "Both - storage costs paid in FIL token; data retrieval may be free or paid depending on provider \u2014 Global decentralized network",
+      "url": "https://filecoin.io",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Exabytes of storage capacity on the network. Thousands of storage providers globally. FIL is a top-50 cryptocurrency by market cap."
+    },
+    {
+      "title": "The Graph",
+      "summary": "Both - free hosted service (being deprecated) and paid decentralized network queries \u2014 Global (blockchain-based)",
+      "url": "https://thegraph.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Billions of queries served. Thousands of active subgraphs. Core infrastructure for DeFi and Web3 data access."
+    },
+    {
+      "title": "Chainlink (Data Feeds / CCIP)",
+      "summary": "Both - reading price feeds is free for consumers; node operators are paid by protocols \u2014 Global (blockchain-based)",
+      "url": "https://chain.link",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Secures tens of billions of dollars in DeFi value. Hundreds of price feeds across multiple blockchains. LINK is a top-20 cryptocurrency. Used by most major DeFi protocols."
+    },
+    {
+      "title": "Dawex",
+      "summary": "Paid - enterprise data exchange platform \u2014 Europe-focused, particularly France. Aligned with EU data sovereignty initiatives (Gaia-X).",
+      "url": "https://www.dawex.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Powers several European data exchange initiatives. Focused on B2B enterprise market rather than consumer-scale."
+    },
+    {
+      "title": "Datarade",
+      "summary": "Free to search/browse; data purchases are between buyers and providers \u2014 Global",
+      "url": "https://datarade.ai",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 2,000+ listed data providers. Thousands of data products cataloged. Growing as a data commerce intermediary."
+    },
+    {
+      "title": "Narrative",
+      "summary": "Both - free to list/browse; transaction fees on data purchases \u2014 Primarily US, expanding globally",
+      "url": "https://www.narrative.io",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Billions of data points available. Growing provider network. Focused on programmatic data commerce."
+    },
+    {
+      "title": "Databricks Marketplace",
+      "summary": "Both - free and paid datasets available; requires Databricks account \u2014 Global",
+      "url": "https://www.databricks.com/product/marketplace",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Growing marketplace. Hundreds of data providers. Leverages Databricks' large enterprise customer base."
+    },
+    {
+      "title": "Kaggle Datasets",
+      "summary": "Free \u2014 Global",
+      "url": "https://www.kaggle.com/datasets",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 200,000+ public datasets. 15M+ registered users. One of the largest data science communities globally."
+    },
+    {
+      "title": "Labelbox",
+      "summary": "Both - free tier available; paid plans for larger projects \u2014 Global",
+      "url": "https://labelbox.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Used by enterprises and AI teams globally. Competitor to Scale AI in the labeling space."
+    },
+    {
+      "title": "Appen (formerly Figure Eight / CrowdFlower)",
+      "summary": "Paid - enterprise/project-based \u2014 Global - crowd workforce in 170+ countries. Multilingual capabilities.",
+      "url": "https://appen.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Global crowd of 1M+ annotators. Major clients include FAANG companies. Revenue of several hundred million USD (though declining)."
+    },
+    {
+      "title": "Snowflake Marketplace",
+      "summary": "Both - free and paid listings available; requires Snowflake account \u2014 Global",
+      "url": "https://app.snowflake.com/marketplace",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 2,000+ listings. 500+ providers. Rapidly growing as Snowflake's customer base expands (9,000+ customers). Major cloud data marketplace."
+    },
+    {
+      "title": "LAION (Large-scale Artificial Intelligence Open Network)",
+      "summary": "Free - open-source datasets \u2014 Global (web-sourced data)",
+      "url": "https://laion.ai",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: LAION-5B: 5.85 billion image-text pairs. One of the largest open datasets ever created for AI training."
+    },
+    {
+      "title": "Dune Analytics",
+      "summary": "Both - free tier with public queries; paid plans for private queries and more features \u2014 Global (blockchain data)",
+      "url": "https://dune.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Indexes major blockchains completely. Hundreds of thousands of community-created queries and dashboards. Major platform for crypto analytics."
+    },
+    {
+      "title": "Nansen",
+      "summary": "Paid - subscription plans with limited free features \u2014 Global (blockchain data)",
+      "url": "https://www.nansen.ai",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Labels millions of blockchain wallets. Covers major blockchains. Growing user base among crypto traders and funds."
+    },
+    {
+      "title": "Crunchbase",
+      "summary": "Both - limited free access; paid subscriptions for full data \u2014 Global, strongest coverage for US tech/startup ecosystem",
+      "url": "https://www.crunchbase.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Profiles on 1M+ companies, 500K+ people, 200K+ investors. Comprehensive funding data going back decades."
+    },
+    {
+      "title": "PitchBook",
+      "summary": "Paid - enterprise subscription \u2014 Global, comprehensive coverage of US, Europe, Asia-Pacific private markets",
+      "url": "https://pitchbook.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers 3M+ companies, 1.5M+ deals, 300K+ investors. Gold standard for private market data. Morningstar subsidiary."
+    },
+    {
+      "title": "SafeGraph (now Dewey)",
+      "summary": "Both - Dewey offers free academic access to some datasets; commercial licensing for business use \u2014 United States primarily, some global coverage",
+      "url": "https://www.deweydata.io",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Millions of POI records in the US. Significant academic user base inherited from SafeGraph."
+    },
+    {
+      "title": "Bright Data (formerly Luminati Networks)",
+      "summary": "Paid - usage-based pricing \u2014 Global web data collection",
+      "url": "https://brightdata.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 72M+ residential IP addresses in proxy network. Serves thousands of enterprise clients. One of the largest web data collection companies globally."
+    },
+    {
+      "title": "Flatfile",
+      "summary": "Both - free tier; paid plans for higher volume \u2014 Global",
+      "url": "https://flatfile.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Used by thousands of SaaS companies for data onboarding."
+    },
+    {
+      "title": "LiveRamp Data Marketplace",
+      "summary": "Paid - enterprise/advertising industry \u2014 Primarily US, expanding internationally",
+      "url": "https://liveramp.com/data-marketplace/",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Connects thousands of data providers with advertisers. Identity graph covers most US adults. $500M+ annual revenue."
+    },
+    {
+      "title": "Explorium",
+      "summary": "Paid - enterprise platform \u2014 Global data sourced; primarily US and European clients",
+      "url": "https://www.explorium.ai",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Aggregates data from thousands of external sources. Growing enterprise client base in financial services."
+    },
+    {
+      "title": "Thinknum Alternative Data",
+      "summary": "Paid - enterprise/institutional \u2014 Primarily US companies tracked, with growing international coverage",
+      "url": "https://www.thinknum.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Tracks 500K+ companies across dozens of web-scraped data types. Used by hundreds of investment firms."
+    },
+    {
+      "title": "Quandl (now part of Nasdaq)",
+      "summary": "Both - some free datasets; premium data requires subscription \u2014 Global financial data",
+      "url": "https://data.nasdaq.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Hundreds of data products from dozens of providers. Millions of time series. Core infrastructure for quantitative finance data access."
+    },
+    {
+      "title": "Gravy Analytics (formerly UberMedia)",
+      "summary": "Paid - enterprise/data licensing \u2014 Primarily United States",
+      "url": "https://gravyanalytics.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Processes billions of location signals. Covers US retail and commercial locations."
+    },
+    {
+      "title": "Veraset",
+      "summary": "Both - free for academic/non-profit research; paid commercial licensing \u2014 United States, with international expansion",
+      "url": "https://www.veraset.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Tracks tens of millions of devices in the US. Daily-updating panel data."
+    },
+    {
+      "title": "Hugging Face (Platform - broader than just Datasets)",
+      "summary": "Both - free for public usage; Pro and Enterprise tiers for advanced features \u2014 Global",
+      "url": "https://huggingface.co",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 500,000+ public models. 100,000+ datasets. Millions of users. Dominant ML platform."
+    },
+    {
+      "title": "OpenAlex",
+      "summary": "Free - completely open \u2014 Global academic literature",
+      "url": "https://openalex.org",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: 250M+ works, 100M+ authors, 100K+ institutions. Comprehensive coverage of global scholarly literature."
+    },
+    {
+      "title": "Databento",
+      "summary": "Paid - usage-based \u2014 US markets primarily (CME, Nasdaq, NYSE, CBOE, etc.). Expanding.",
+      "url": "https://databento.com",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers major US exchanges. Growing data coverage and exchange partnerships."
+    },
+    {
+      "title": "Polygon.io",
+      "summary": "Both - free basic tier; paid plans for real-time and higher-volume access \u2014 Primarily US financial markets",
+      "url": "https://polygon.io",
+      "tags": [
+        "Emerging, Decentralized & Nich"
+      ],
+      "details": "Scale: Covers all US stocks, options, forex, and crypto. Serves thousands of developers and FinTech applications."
+    },
+    {
+      "title": "Data.gov (US Federal Open Data)",
+      "summary": "Free \u2014 United States (federal, state, and local government data)",
+      "url": "https://data.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~250,000+ datasets harvested from federal agencies (as of 2024-2025). Note: the actual count fluctuates as agencies add/remove datasets."
+    },
+    {
+      "title": "Data.gov.uk (UK Open Data Portal)",
+      "summary": "Free \u2014 United Kingdom (England, Scotland, Wales, Northern Ireland)",
+      "url": "https://data.gov.uk",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~55,000-60,000 datasets from ~1,000+ publishers (as of 2024-2025)"
+    },
+    {
+      "title": "Official Portal for European Data (data.europa.eu)",
+      "summary": "Free \u2014 European Union member states and associated countries (pan-European)",
+      "url": "https://data.europa.eu",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~1,600,000+ datasets harvested from 36+ countries and EU institutions (as of 2024-2025). This is a meta-portal aggregating from national portals."
+    },
+    {
+      "title": "Kaggle Datasets",
+      "summary": "Free (with optional paid compute tiers) \u2014 Global (community-contributed datasets from worldwide sources)",
+      "url": "https://www.kaggle.com/datasets",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~300,000+ public datasets (as of 2024-2025, growing rapidly from community contributions)"
+    },
+    {
+      "title": "World Bank Open Data",
+      "summary": "Free \u2014 Global (217 economies/countries, with special focus on developing nations)",
+      "url": "https://data.worldbank.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~20,000+ indicators across 217 economies. The Microdata Library contains 5,000+ surveys. Multiple databases including WDI, International Debt Statistics, Doing Business (archived), etc."
+    },
+    {
+      "title": "UNdata",
+      "summary": "Free \u2014 Global (all UN member states, ~193 countries)",
+      "url": "https://data.un.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~60+ databases from 30+ UN system organizations, containing millions of data records across hundreds of indicators"
+    },
+    {
+      "title": "OECD Data",
+      "summary": "Free (mostly) \u2014 OECD member countries (38 members as of 2025) plus key partner economies. Primarily developed/advanced economies.",
+      "url": "https://data.oecd.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~800+ datasets covering thousands of indicators across 38+ countries. Billions of data points in the full OECD.Stat system."
+    },
+    {
+      "title": "WHO Global Health Observatory (GHO)",
+      "summary": "Free \u2014 Global (194 WHO member states)",
+      "url": "https://www.who.int/data/gho",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~2,300+ indicators across 194 countries with time series data. Covers key global health topics comprehensively."
+    },
+    {
+      "title": "NASA Open Data Portal",
+      "summary": "Free \u2014 Global/Universal (Earth observation is global; space data covers the solar system and beyond)",
+      "url": "https://data.nasa.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: data.nasa.gov catalog lists ~40,000+ datasets. NASA Earthdata system holds petabytes of Earth science data. The full NASA data ecosystem is massive across multiple specialized archives."
+    },
+    {
+      "title": "NOAA Climate Data (National Centers for Environmental Information)",
+      "summary": "Free \u2014 Global (with especially dense coverage in the United States)",
+      "url": "https://www.ncei.noaa.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Tens of petabytes of environmental data. NCEI is the world's largest active archive of weather and climate data. Billions of weather observations from stations worldwide."
+    },
+    {
+      "title": "U.S. Census Bureau Data",
+      "summary": "Free \u2014 United States (national, state, county, city, census tract, block group, ZIP code levels)",
+      "url": "https://data.census.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Hundreds of datasets covering the entire U.S. population. The Census API provides access to billions of data points across multiple surveys and geographies."
+    },
+    {
+      "title": "data.world",
+      "summary": "Both (freemium model) \u2014 Global (community-contributed datasets from worldwide sources)",
+      "url": "https://data.world",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~100,000+ public datasets from community contributors and organizations (as of 2024-2025)"
+    },
+    {
+      "title": "OpenDataSoft",
+      "summary": "Both (freemium for portals; data access is free) \u2014 Global (especially strong in Europe, particularly France). Powers portals for cities and organizations worldwide.",
+      "url": "https://www.opendatasoft.com",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Powers 300+ open data portals worldwide. The Data Hub indexes 30,000+ datasets from these portals."
+    },
+    {
+      "title": "Humanitarian Data Exchange (HDX)",
+      "summary": "Free \u2014 Global, with emphasis on countries affected by humanitarian crises (Sub-Saharan Africa, Middle East, South/Southeast Asia, etc.)",
+      "url": "https://data.humdata.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~20,000+ datasets from 1,500+ organizations covering 250+ locations (as of 2024-2025)"
+    },
+    {
+      "title": "Registry of Open Data on AWS",
+      "summary": "Free (data access); compute costs may apply \u2014 Global",
+      "url": "https://registry.opendata.aws",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~500+ curated datasets, many of which are massive (petabyte-scale). Includes landmark datasets like Landsat, Sentinel-2, NEXRAD, 1000 Genomes Project, etc."
+    },
+    {
+      "title": "Google Dataset Search",
+      "summary": "Free (search engine; data availability depends on source) \u2014 Global (indexes datasets from all countries and organizations)",
+      "url": "https://datasetsearch.research.google.com",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Indexes ~25+ million datasets across the web (as of 2023-2024 estimates). Continuously growing as more sites adopt Schema.org markup."
+    },
+    {
+      "title": "Datahub.io",
+      "summary": "Free (core datasets) \u2014 Global",
+      "url": "https://datahub.io",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~1,000+ core/curated datasets. The platform focuses on quality over quantity."
+    },
+    {
+      "title": "Open Data Network (Tyler Data & Insights, formerly Socrata)",
+      "summary": "Free (data access); platform is commercial SaaS \u2014 Primarily United States (federal, state, and local government). Some international government portals also use the platform.",
+      "url": "https://www.opendatanetwork.com",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: The Open Data Network indexes ~170,000+ datasets across thousands of Socrata/Tyler-powered portals. Individual portals range from hundreds to tens of thousands of datasets."
+    },
+    {
+      "title": "Canada Open Government Portal",
+      "summary": "Free \u2014 Canada (federal government data; some provincial data)",
+      "url": "https://open.canada.ca",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~90,000+ datasets from federal departments and agencies (as of 2024-2025)"
+    },
+    {
+      "title": "data.gov.au (Australian Government Open Data Portal)",
+      "summary": "Free \u2014 Australia (federal, state/territory, and local government data)",
+      "url": "https://data.gov.au",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~95,000+ datasets from federal, state, and local government sources (as of 2024-2025)"
+    },
+    {
+      "title": "data.gov.in (India Open Government Data Platform)",
+      "summary": "Free \u2014 India (national, state, and district level data)",
+      "url": "https://data.gov.in",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~500,000+ resources/catalogs from 150+ government departments (as of 2024-2025). India's portal is one of the largest by catalog count globally, though many entries are individual tables/views rather than distinct datasets."
+    },
+    {
+      "title": "NASA Earthdata",
+      "summary": "Free \u2014 Global (Earth observation data covering the entire planet)",
+      "url": "https://earthdata.nasa.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Over 60 petabytes of Earth science data across 12 DAACs, growing by several petabytes per year. Thousands of data products from hundreds of satellite missions."
+    },
+    {
+      "title": "Eurostat",
+      "summary": "Free \u2014 European Union member states, EFTA countries, candidate countries, and some partner countries",
+      "url": "https://ec.europa.eu/eurostat",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~7,500+ datasets covering thousands of indicators. Billions of data points with extensive time series (some going back to the 1950s)."
+    },
+    {
+      "title": "Federal Reserve Economic Data (FRED)",
+      "summary": "Free \u2014 Primarily United States, with some international economic data",
+      "url": "https://fred.stlouisfed.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~800,000+ time series from 100+ sources. One of the most comprehensive free economic data platforms in the world."
+    },
+    {
+      "title": "IMF Data",
+      "summary": "Free \u2014 Global (190 member countries)",
+      "url": "https://data.imf.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Multiple major databases covering 190 countries with extensive time series. International Financial Statistics alone covers 32,000+ time series."
+    },
+    {
+      "title": "FAO Data (FAOSTAT)",
+      "summary": "Free \u2014 Global (245+ countries and territories)",
+      "url": "https://www.fao.org/faostat",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Over 20,000 indicators across 245+ countries/territories. Time series data from 1961 to present for many indicators."
+    },
+    {
+      "title": "Global Biodiversity Information Facility (GBIF)",
+      "summary": "Free \u2014 Global (data from every continent including Antarctica)",
+      "url": "https://www.gbif.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~2.6+ billion occurrence records from 85,000+ datasets published by 1,800+ institutions (as of 2024-2025). One of the largest biodiversity databases in the world."
+    },
+    {
+      "title": "arXiv Dataset / Papers with Code",
+      "summary": "Free \u2014 Global",
+      "url": "https://paperswithcode.com/datasets",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~8,000+ datasets cataloged with benchmark results and paper linkages (as of 2024-2025)"
+    },
+    {
+      "title": "Zenodo",
+      "summary": "Free \u2014 Global (international research community)",
+      "url": "https://zenodo.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~3+ million records (publications, datasets, software combined). Rapidly growing as open science mandates increase."
+    },
+    {
+      "title": "UCI Machine Learning Repository",
+      "summary": "Free \u2014 Global (academic dataset repository)",
+      "url": "https://archive.ics.uci.edu",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~660+ datasets (as of 2024-2025). Focused on quality and citation impact rather than quantity."
+    },
+    {
+      "title": "OpenStreetMap (OSM)",
+      "summary": "Free \u2014 Global (worldwide coverage, quality varies by region)",
+      "url": "https://www.openstreetmap.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~10+ billion nodes, 1+ billion ways, 15+ million relations. Over 9 million registered contributors. One of the largest collaborative geospatial databases in the world."
+    },
+    {
+      "title": "Data.CDC.gov (CDC Open Data)",
+      "summary": "Free \u2014 United States (national, state, county, and sometimes sub-county levels)",
+      "url": "https://data.cdc.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~1,000+ datasets on the Socrata portal. Additional data available through CDC WONDER and other CDC data systems."
+    },
+    {
+      "title": "New York City Open Data",
+      "summary": "Free \u2014 New York City (five boroughs)",
+      "url": "https://opendata.cityofnewyork.us",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~3,000+ datasets from 100+ city agencies"
+    },
+    {
+      "title": "Copernicus Open Access Hub / Copernicus Data Space Ecosystem",
+      "summary": "Free \u2014 Global (Sentinel satellites provide worldwide coverage)",
+      "url": "https://dataspace.copernicus.eu",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: Petabytes of satellite data. Sentinel missions produce ~12+ terabytes of data per day. Full archive available."
+    },
+    {
+      "title": "GenBank / NCBI Databases",
+      "summary": "Free \u2014 Global (international sequence database consortium member)",
+      "url": "https://www.ncbi.nlm.nih.gov",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: GenBank contains ~250+ million sequences. SRA contains petabytes of sequencing data. PubMed indexes 36+ million citations. PubChem has 110+ million compounds. Collectively the largest biomedical data resource in the world."
+    },
+    {
+      "title": "Japan e-Stat",
+      "summary": "Free \u2014 Japan (national, prefectural, and municipal levels)",
+      "url": "https://www.e-stat.go.jp/en",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~750+ statistical datasets covering virtually all aspects of Japanese society and economy"
+    },
+    {
+      "title": "Brazil dados.gov.br",
+      "summary": "Free \u2014 Brazil (federal, state, and municipal data)",
+      "url": "https://dados.gov.br",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~10,000+ datasets from federal agencies and some state/municipal sources"
+    },
+    {
+      "title": "Mexico datos.gob.mx",
+      "summary": "Free \u2014 Mexico (federal and some state-level data)",
+      "url": "https://datos.gob.mx",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~40,000+ datasets from federal agencies"
+    },
+    {
+      "title": "South Korea data.go.kr",
+      "summary": "Free \u2014 South Korea",
+      "url": "https://www.data.go.kr",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~80,000+ datasets and 9,000+ open APIs (among the largest in Asia)"
+    },
+    {
+      "title": "Figshare",
+      "summary": "Both (freemium) \u2014 Global (international research community)",
+      "url": "https://figshare.com",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~5+ million items (datasets, figures, papers, code, etc.) from researchers worldwide"
+    },
+    {
+      "title": "Dryad Digital Repository",
+      "summary": "Both \u2014 Global (international research community)",
+      "url": "https://datadryad.org",
+      "tags": [
+        "Free & Open Data Portals"
+      ],
+      "details": "Scale: ~70,000+ data packages from thousands of journals and researchers"
+    },
+    {
+      "title": "Datarade",
+      "summary": "Both - Free to browse and compare; paid to purchase data from listed providers \u2014 Global - providers and data covering all major regions",
+      "url": "https://datarade.ai",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 2,000+ data providers, 10,000+ data products listed [Based on training data, may need verification]"
+    },
+    {
+      "title": "Dawex",
+      "summary": "Paid - Enterprise platform; Dawex also operates a public data exchange \u2014 Global with strong European/French presence. Active in EU data spaces initiatives (Gaia-X participant).",
+      "url": "https://www.dawex.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Hundreds of organizations using the platform technology; public exchange scale is more modest [Based on training data, may need verification]"
+    },
+    {
+      "title": "Narrative.io",
+      "summary": "Both - Free tier available for limited usage; paid plans for full access \u2014 Primarily US-focused, with some global data available",
+      "url": "https://www.narrative.io",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Billions of data points from dozens of providers [Based on training data, may need verification]"
+    },
+    {
+      "title": "LiveRamp Data Marketplace",
+      "summary": "Paid \u2014 Primarily US, with growing international presence (UK, France, Australia, Japan)",
+      "url": "https://liveramp.com/data-marketplace/",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Hundreds of data providers, reaching hundreds of millions of US consumers. LiveRamp's identity graph covers 250M+ US adults [Based on training data, may need verification]"
+    },
+    {
+      "title": "Precisely Data Experience (formerly Data.World Enterprise / Precisely Data Integrity Suite)",
+      "summary": "Paid - Enterprise \u2014 Global - data available for 250+ countries and territories, particularly strong in US, UK, Australia",
+      "url": "https://www.precisely.com/product/precisely-data-experience",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Thousands of enterprise customers. Data covering 250+ countries. Billions of location/address records globally [Based on training data, may need verification]"
+    },
+    {
+      "title": "SafeGraph (now part of Dewey)",
+      "summary": "Both - Dewey offers free academic access programs and paid commercial access \u2014 Primarily US, with some global POI coverage (SafeGraph had data for 220+ countries for POI)",
+      "url": "https://www.deweydata.io",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: ~11 million POI in the US, global POI covering 220+ countries. Foot traffic data derived from tens of millions of mobile devices [Based on training data, may need verification]"
+    },
+    {
+      "title": "Crunchbase (Data Licensing)",
+      "summary": "Both - Free basic access; paid Pro/Enterprise plans; data licensing for bulk access \u2014 Global with strongest coverage in US, Europe, and major startup hubs worldwide",
+      "url": "https://www.crunchbase.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Data on 1M+ companies, 200K+ funding rounds, hundreds of thousands of investors. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Bloomberg Enterprise Data",
+      "summary": "Paid - Enterprise only \u2014 Global - comprehensive worldwide coverage of financial markets",
+      "url": "https://www.bloomberg.com/professional/solution/data-and-content/",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 325,000+ terminal subscribers. Covers virtually all publicly traded securities globally, millions of fixed income instruments, comprehensive derivatives coverage. Revenue estimated at $12B+ annually. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Refinitiv / LSEG Data (London Stock Exchange Group Data & Analytics)",
+      "summary": "Paid - Enterprise only \u2014 Global - comprehensive worldwide coverage",
+      "url": "https://www.lseg.com/en/data-analytics",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 400,000+ customer professionals across 190 countries. Data covering millions of instruments from 400+ exchanges. [Based on training data, may need verification]"
+    },
+    {
+      "title": "S&P Global Market Intelligence",
+      "summary": "Paid - Enterprise only \u2014 Global - comprehensive coverage of public and private companies worldwide",
+      "url": "https://www.spglobal.com/marketintelligence/",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Data on 68,000+ public companies, millions of private companies. 99% of global market capitalization covered. $13B+ annual revenue for S&P Global overall. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Dun & Bradstreet (D&B)",
+      "summary": "Both - Limited free lookups; paid for full access and data products \u2014 Global - data on 500M+ business entities across 200+ countries",
+      "url": "https://www.dnb.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 500M+ business entities globally, 170M+ in detailed database. Used by 90% of Fortune 500. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Acxiom (now a division of IPG / Kinesso)",
+      "summary": "Paid - Enterprise only \u2014 Primarily US, with operations in UK and several other markets",
+      "url": "https://www.acxiom.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Data on 2.5B+ consumers globally, with particularly deep coverage of 300M+ US adults/250M+ US adults with rich attributes. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Nielsen",
+      "summary": "Paid - Enterprise only \u2014 Global - audience measurement in 55+ countries, NielsenIQ in 90+ countries",
+      "url": "https://www.nielsen.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Measures media consumption for hundreds of millions of people globally. Nielsen ratings cover 100% of US TV universe. NielsenIQ covers 90+ markets. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Experian Data Products",
+      "summary": "Both - Free consumer credit reports (annual); paid business/marketing data products \u2014 Global - operates in 40+ countries. Major markets: US, UK, Brazil, APAC",
+      "url": "https://www.experian.com/business/data",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Credit data on 1.4B+ people and 200M+ businesses globally. ConsumerView covers 300M+ US consumers, 126M+ households. Annual revenue ~$7B. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Foursquare",
+      "summary": "Both - Free tier for developers (limited); paid for commercial/enterprise use \u2014 Global - POI data covering 200+ countries; foot traffic data strongest in US",
+      "url": "https://foursquare.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 100M+ POI globally, 14B+ user-confirmed check-ins, 500M+ device panel for foot traffic. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Nasdaq Data Link (formerly Quandl)",
+      "summary": "Both - Many free datasets; premium/alternative data requires paid subscription \u2014 Primarily US financial data, with some global coverage depending on dataset",
+      "url": "https://data.nasdaq.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Hundreds of datasets from dozens of providers. Millions of time series. Hundreds of thousands of users. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Bright Data (formerly Luminati Networks)",
+      "summary": "Paid (with free trials) \u2014 Global - proxy network covers 195+ countries; data collection from websites worldwide",
+      "url": "https://brightdata.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 72M+ residential IPs, millions of datacenter IPs. Serves 20,000+ customers including Fortune 500 companies. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Thinknum",
+      "summary": "Paid - Enterprise only (some limited free data available) \u2014 Primarily US with some global coverage depending on data type",
+      "url": "https://www.thinknum.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Tracks 400K+ companies, billions of data points. Serves hundreds of institutional clients. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Explorium",
+      "summary": "Paid (with free trial/demo available) \u2014 Global data enrichment capabilities, company based in US and Israel",
+      "url": "https://www.explorium.ai",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Access to thousands of external data sources, billions of data points. Serves hundreds of enterprise customers. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Demyst",
+      "summary": "Paid - Enterprise focused \u2014 Global, with strong focus on US, UK, Australia, and Asia-Pacific",
+      "url": "https://www.demyst.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Connects to hundreds of data providers. Serves major banks and financial institutions. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Near (Near Intelligence / Azira)",
+      "summary": "Paid - Enterprise only \u2014 Global - claimed coverage in 44 countries with particular strength in Southeast Asia, India, Middle East, and US",
+      "url": "https://near.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Claimed 1.6B device IDs, coverage in 44 countries. [Based on training data, may need verification - company faced credibility questions]"
+    },
+    {
+      "title": "Lotame",
+      "summary": "Paid \u2014 Global - operations in US, Europe, APAC, LATAM. Particular strength outside US (often positioned as alternative to larger US-centric platforms)",
+      "url": "https://www.lotame.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Reaches 4B+ device IDs globally. Marketplace includes billions of audience records. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Snowflake Marketplace",
+      "summary": "Both - Free and paid listings available. Snowflake account required (which has its own compute costs). \u2014 Global",
+      "url": "https://app.snowflake.com/marketplace",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 2,000+ listings from 500+ providers. Snowflake has 9,000+ customers overall. [Based on training data, may need verification - growing rapidly]"
+    },
+    {
+      "title": "AWS Data Exchange",
+      "summary": "Both - Free and paid datasets available \u2014 Global (available in most AWS regions)",
+      "url": "https://aws.amazon.com/data-exchange/",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 3,500+ data products from 300+ data providers. Millions of AWS customers as potential buyers. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Databricks Marketplace",
+      "summary": "Both - Free and paid listings \u2014 Global",
+      "url": "https://www.databricks.com/product/marketplace",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Hundreds of listings. Databricks has 10,000+ customers. Newer marketplace, growing quickly. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Google Cloud Analytics Hub",
+      "summary": "Both - Free to use the platform; data pricing set by publishers (many free public datasets) \u2014 Global",
+      "url": "https://cloud.google.com/analytics-hub",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 200+ public datasets in Google Public Datasets Program. Growing number of commercial listings. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Oracle Data Marketplace (Oracle Data Cloud - now largely discontinued)",
+      "summary": "Was Paid - Enterprise \u2014 Was global, primarily US",
+      "url": "https://www.oracle.com/cx/advertising/",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Was one of the largest advertising data platforms. Now significantly reduced."
+    },
+    {
+      "title": "Placer.ai",
+      "summary": "Both - Free basic dashboard; paid for full analytics and data access \u2014 Primarily US",
+      "url": "https://www.placer.ai",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Tracks millions of locations in the US. Used by thousands of retail, CRE, and restaurant companies. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Gravy Analytics (now part of Unacast)",
+      "summary": "Paid - Enterprise only \u2014 US primarily, some global coverage",
+      "url": "https://www.unacast.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Billions of location signals. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Dataiku Data Catalog / Marketplace",
+      "summary": "Paid - Part of Dataiku DSS platform \u2014 Global",
+      "url": "https://www.dataiku.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 500+ enterprise customers globally. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Crux Informatics",
+      "summary": "Paid - Enterprise only \u2014 Global (data sources worldwide)",
+      "url": "https://www.cruxinformatics.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Manages data pipelines for major financial institutions. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Data.world",
+      "summary": "Both - Free community tier; paid for enterprise features \u2014 Global (community platform)",
+      "url": "https://data.world",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: 1M+ community members, millions of datasets (open data). Growing enterprise customer base. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Measured (formerly known in alternative data circles)",
+      "summary": "Paid - Enterprise only \u2014 US primarily",
+      "url": "https://www.measured.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Niche platform serving hundreds of brands [Based on training data, may need verification]"
+    },
+    {
+      "title": "Battlefin / Eagle Alpha",
+      "summary": "Paid / By invitation for events; platform access varies \u2014 Global, US-focused",
+      "url": "https://www.battlefin.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Network of hundreds of alternative data providers and thousands of institutional data buyers [Based on training data, may need verification]"
+    },
+    {
+      "title": "Neudata",
+      "summary": "Paid - Subscription for buy-side firms \u2014 Global alternative data landscape",
+      "url": "https://www.neudata.co",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Tracks 2,000+ data providers, used by hundreds of institutional investors [Based on training data, may need verification]"
+    },
+    {
+      "title": "Enigma (Enigma Technologies)",
+      "summary": "Paid (some free public data tools previously available) \u2014 US primarily",
+      "url": "https://www.enigma.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Data on millions of US small businesses. [Based on training data, may need verification]"
+    },
+    {
+      "title": "Advan Research",
+      "summary": "Paid - Enterprise/institutional only \u2014 US primarily",
+      "url": "https://www.advanresearch.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Tracks thousands of retail chains across US [Based on training data, may need verification]"
+    },
+    {
+      "title": "Similarweb",
+      "summary": "Both - Free basic web analytics; paid for full platform and data \u2014 Global web analytics across all countries",
+      "url": "https://www.similarweb.com",
+      "tags": [
+        "Specialized & Niche Commercial"
+      ],
+      "details": "Scale: Tracks billions of digital signals, covers 100M+ websites and 4.7M+ apps. [Based on training data, may need verification]"
+    }
+  ]
+}
