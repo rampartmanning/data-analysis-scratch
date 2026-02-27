@@ -9,6 +9,16 @@
       "topic": "Marketplace Provider Terms",
       "filename": "marketplace-provider-terms.json",
       "updated_at": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "topic": "Marketplace Bootstrap Strategy",
+      "filename": "marketplace-bootstrap.json",
+      "updated_at": "2026-02-27T00:00:00+00:00"
+    },
+    {
+      "topic": "Marketplace Selection Criteria",
+      "filename": "marketplace-selection-criteria.json",
+      "updated_at": "2026-02-27T00:00:00+00:00"
     }
   ]
 }

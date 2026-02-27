@@ -1,0 +1,59 @@
+{
+  "topic": "Marketplace Selection Criteria",
+  "generated_at": "2026-02-27T00:00:00+00:00",
+  "metadata": {
+    "criteria_count": 4,
+    "applies_to": "Both bootstrap and large-scale growth phases",
+    "full_report": "research/data-marketplace-selection-criteria.md"
+  },
+  "findings": [
+    {
+      "title": "The Four Requirements",
+      "summary": "Every marketplace we join must pass ALL four tests. No exceptions. Failing any one disqualifies it.",
+      "tags": ["Framework"],
+      "details": "1. API-MANAGED    Can we automate everything after sign-up?\n2. GENERALIST      Can we list across many categories?\n3. TRACTION        Are real buyers actually purchasing data here?\n4. NO FEES         Can we list without paying to participate?\n\nAll four must pass simultaneously.\n\nDecision rules:\n  4x Pass                     \u2192 Join immediately\n  3x Pass + 1x Conditional    \u2192 Join with documented exception\n  Any \"Investigate\"            \u2192 Research before committing time\n  Any \"Fail\"                  \u2192 Do not join"
+    },
+    {
+      "title": "Criterion 1: Full API-Driven Dataset Management",
+      "summary": "After initial sign-up, can we create, update, and manage all listings entirely through APIs \u2014 with zero manual portal interaction?",
+      "tags": ["Criterion"],
+      "details": "PASSES:\n\u2022 Documented REST/GraphQL API (or CLI/SDK) for creating listings, uploading data, updating metadata, publishing revisions, managing pricing\n\u2022 Full lifecycle automatable: create \u2192 push revision \u2192 update description \u2192 adjust pricing \u2192 monitor usage\n\u2022 Bulk operations supported (we will have 10\u201320+ datasets)\n\u2022 Reasonable rate limits supporting daily/weekly/monthly update cadences\n\nFAILS:\n\u2022 Listing creation or updates require a web portal\n\u2022 Data uploads are manual (drag-and-drop, file picker)\n\u2022 Metadata changes only possible through GUI\n\u2022 Any recurring publishing step requires human interaction\n\u2022 \"API available\" but only for read/query, not publishing\n\nWHY: We are building an automated factory. Every manual step is a scaling bottleneck. One-time sign-up friction is acceptable. Ongoing friction is not."
+    },
+    {
+      "title": "Criterion 2: Generalist Coverage",
+      "summary": "Can we list datasets across multiple unrelated categories without restriction?",
+      "tags": ["Criterion"],
+      "details": "PASSES:\n\u2022 Supports listings across many industries (financial, geospatial, environmental, economic, demographic, etc.)\n\u2022 No requirement that all listings be in a single category\n\u2022 Broad category taxonomy accommodating whatever we build\n\u2022 Buyer base spans multiple use cases (analytics, ML, research, BI)\n\nFAILS:\n\u2022 Platform restricts to a single domain (\"financial only\", \"healthcare only\", \"advertising only\")\n\u2022 Technically allows multiple categories but buyer base is monolithic\n\u2022 Requires data linkable to people/devices/identities (AdTech marketplaces)\n\u2022 Our data would be a poor fit for the core audience across most categories\n\nWHY: We don't know which datasets will have legs. We need marketplaces where we can cast a wide net. Niche marketplaces lock us into one bet. We want optionality."
+    },
+    {
+      "title": "Criterion 3: Demonstrated Market Traction",
+      "summary": "Does this marketplace have real buyers making real purchases, or is it a ghost town?",
+      "tags": ["Criterion"],
+      "details": "PASSES:\n\u2022 Published/verifiable metrics on provider count, listing count, buyer activity, or transaction volume\n\u2022 Named enterprise customers or institutional buyers\n\u2022 Active provider community with visible small/new provider success\n\u2022 Operating 2+ years with evidence of growth\n\u2022 Independent reviews, press coverage, or community discussion confirming real usage\n\nFAILS:\n\u2022 No verifiable buyer activity metrics\n\u2022 Launched recently with no evidence of completed transactions\n\u2022 Provider count inflated (registered but not active)\n\u2022 Only the platform's own marketing materials reference it\n\nACCEPTABLE TRACTION TIERS:\n  Large:  Thousands of providers, named enterprise buyers, public revenue numbers\n  Mid:    Hundreds of providers, verifiable buyer community, documented transactions\n  Small:  Tens of providers, but named customers and real sales evidence\n  No:     No buyer evidence, only sign-ups, or \"beta\" with waitlist \u2192 REJECT"
+    },
+    {
+      "title": "Criterion 4: No Fees to Participate",
+      "summary": "Can we list and sell data without paying upfront fees, subscription costs, or platform access charges?",
+      "tags": ["Criterion"],
+      "details": "PASSES:\n\u2022 Free to create account and list data products\n\u2022 Platform monetizes through commission/revenue-share only (they earn when we earn)\n\u2022 Transaction-based fees acceptable (e.g. 3% of sales, payment processing)\n\u2022 Standard cloud infra costs acceptable (S3 storage, compute we'd use anyway)\n\nFAILS:\n\u2022 Monthly/annual subscription fee for provider account\n\u2022 Per-listing fees\n\u2022 Platform access fees separate from transaction revenue\n\u2022 Required paid partnership/membership program\n\u2022 \"Freemium\" where free tier is too limited (e.g. 1 dataset max)\n\nNUANCE \u2014 CLOUD COSTS: AWS/Snowflake/Databricks accounts are infrastructure we need anyway. If a marketplace is embedded in a platform we already use, incremental cost to list is ~zero. But if a marketplace requires adopting a new paid platform solely to list, that is a de facto participation fee.\n\nWHY: Revenue-share aligns incentives. Fixed fees are a tax on presence regardless of results. At startup scale, $500/month x 5 platforms = $30K/year before selling a single record."
+    },
+    {
+      "title": "Scorecard: Primary Marketplaces",
+      "summary": "Assessment of the 5 large-scale cloud marketplaces against all four criteria.",
+      "tags": ["Assessment", "Primary"],
+      "details": "AWS Data Exchange\n  API-Managed:  PASS   Catalog API, Data Exchange API, CLI\n  Generalist:   PASS   All industries\n  Traction:     PASS   3,500+ products, 300+ providers\n  No Fees:      PASS   3% commission only\n  VERDICT:      PASS\n\nSnowflake Marketplace\n  API-Managed:  PASS   SQL API (CREATE LISTING)\n  Generalist:   PASS   All industries\n  Traction:     PASS   2,700+ listings, 670+ providers\n  No Fees:      PASS   0% commission\n  VERDICT:      PASS\n\nDatabricks Marketplace\n  API-Managed:  INVESTIGATE   No public listing API documented\n  Generalist:   PASS          All industries\n  Traction:     PASS          2,200+ listings, 230+ providers\n  No Fees:      PASS          0% fee\n  VERDICT:      INVESTIGATE API\n\nGoogle Analytics Hub\n  API-Managed:  PASS   REST API, gcloud CLI, Terraform\n  Generalist:   PASS   All industries\n  Traction:     WEAK   \"Underrated\", lower adoption\n  No Fees:      PASS   2\u20133% commission\n  VERDICT:      PASS (weak traction)\n\nNarrative.io\n  API-Managed:  PASS   Platform APIs for ingestion + management\n  Generalist:   PASS   Data-type agnostic\n  Traction:     MODERATE   Buyer base skews AdTech\n  No Fees:      PASS   0% from seller\n  VERDICT:      PASS"
+    },
+    {
+      "title": "Scorecard: Bootstrap Marketplaces",
+      "summary": "Assessment of bootstrap-phase platforms against all four criteria.",
+      "tags": ["Assessment", "Bootstrap"],
+      "details": "Dewey Data\n  API-Managed:  CONDITIONAL   No API, but they manage everything for you\n  Generalist:   PASS          Multi-category\n  Traction:     PASS          ~30 providers, MIT/Stanford as buyers\n  No Fees:      PASS          Revenue share only\n  VERDICT:      CONDITIONAL PASS \u2014 no API but zero friction (they absorb it)\n\nDatarade\n  API-Managed:  INVESTIGATE   Listing management may be portal-only\n  Generalist:   PASS          500+ categories\n  Traction:     PASS          2,600+ providers, 120K monthly visitors\n  No Fees:      PASS          Commission on deals only\n  VERDICT:      INVESTIGATE API\n\nNomad Data\n  API-Managed:  INVESTIGATE   Unknown\n  Generalist:   PASS          All industries\n  Traction:     PASS          2,500+ sources\n  No Fees:      PASS          Zero fees\n  VERDICT:      INVESTIGATE API\n\nOpendatabay\n  API-Managed:  INVESTIGATE   Appears portal-based\n  Generalist:   PASS          Any data type\n  Traction:     INVESTIGATE   Newer platform, unverified\n  No Fees:      PASS          5\u201330% commission\n  VERDICT:      INVESTIGATE API + TRACTION\n\nNasdaq Data Link\n  API-Managed:  PASS          Well-documented API (Quandl heritage)\n  Generalist:   FAIL          Finance-focused\n  Traction:     PASS          ~950K users\n  No Fees:      PASS          Revenue share\n  VERDICT:      FAIL (not generalist)\n\nEagle Alpha\n  API-Managed:  FAIL          Human introduction model\n  Generalist:   PARTIAL       Alt data broadly\n  Traction:     PASS          2,500+ products\n  No Fees:      PASS          Zero fees\n  VERDICT:      FAIL (no API management)\n\nNeudata\n  API-Managed:  FAIL          Scouting/introduction model\n  Generalist:   PARTIAL       Alt + traditional data\n  Traction:     PASS          2,000 vendors, 1,000+ buyers\n  No Fees:      PASS          Zero fees\n  VERDICT:      FAIL (no API management)"
+    },
+    {
+      "title": "Key Observations",
+      "summary": "Patterns from applying the criteria across all known marketplaces.",
+      "tags": ["Analysis"],
+      "details": "1. CLOUD MARKETPLACES PASS ON API \u2014 AWS, Snowflake, Google all built for enterprise automation. This is expected.\n\n2. DATABRICKS NEEDS API INVESTIGATION \u2014 Listing management may require Provider Console GUI. Could be a blocker.\n\n3. BOOTSTRAP PLATFORMS MOSTLY FAIL OR NEED INVESTIGATION ON API \u2014 Smaller platforms tend to have portal-based workflows. This is the biggest friction point.\n\n4. DEWEY IS THE INTERESTING EXCEPTION \u2014 Fails the API test technically, but because they manage everything for you, there's no manual work on our side. The \"no friction\" goal is met through a different mechanism.\n\n5. LEAD-GEN PLATFORMS INHERENTLY FAIL API \u2014 Eagle Alpha and Neudata use human introductions. Still worth using for zero-cost leads, but they don't qualify as \"marketplaces\" under these criteria.\n\n6. NO MARKETPLACE REQUIRES EXCLUSIVITY \u2014 Multi-marketplace distribution is universally supported. List everywhere that qualifies."
+    }
+  ]
+}
