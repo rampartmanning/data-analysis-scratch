@@ -1,7 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import TopicView from './components/TopicView.vue'
+import SearchView from './components/SearchView.vue'
 
+const mode = ref('search')
 const topics = ref([])
 const selected = ref(null)
 const loading = ref(true)
@@ -32,33 +34,53 @@ function selectTopic(t) {
 <template>
   <div class="app">
     <header>
-      <h1>DAS <span class="subtitle">Research Findings</span></h1>
+      <div class="header-row">
+        <h1>DAS <span class="subtitle">Research Findings</span></h1>
+        <nav class="mode-nav">
+          <button
+            :class="['mode-btn', { active: mode === 'search' }]"
+            @click="mode = 'search'"
+          >Search</button>
+          <button
+            :class="['mode-btn', { active: mode === 'topics' }]"
+            @click="mode = 'topics'"
+          >Research</button>
+        </nav>
+      </div>
     </header>
 
-    <div v-if="loading" class="status">Loading...</div>
-    <div v-else-if="error" class="status muted">{{ error }}</div>
-    <div v-else-if="topics.length === 0" class="status muted">
-      No findings published yet. Run a research pipeline to generate data.
+    <!-- Search mode -->
+    <div v-if="mode === 'search'" class="search-container">
+      <SearchView />
     </div>
 
-    <div v-else class="layout">
-      <nav class="sidebar">
-        <ul>
-          <li
-            v-for="t in topics"
-            :key="t.filename"
-            :class="{ active: selected?.filename === t.filename }"
-            @click="selectTopic(t)"
-          >
-            {{ t.topic }}
-          </li>
-        </ul>
-      </nav>
-      <main class="content">
-        <TopicView v-if="selected" :topic="selected" />
-        <div v-else class="status muted">Select a topic from the sidebar.</div>
-      </main>
-    </div>
+    <!-- Topics/Research mode -->
+    <template v-else>
+      <div v-if="loading" class="status">Loading...</div>
+      <div v-else-if="error" class="status muted">{{ error }}</div>
+      <div v-else-if="topics.length === 0" class="status muted">
+        No findings published yet. Run a research pipeline to generate data.
+      </div>
+
+      <div v-else class="layout">
+        <nav class="sidebar">
+          <ul>
+            <li
+              v-for="t in topics"
+              :key="t.filename"
+              :class="{ active: selected?.filename === t.filename }"
+              @click="selectTopic(t)"
+            >
+              {{ t.topic }}
+            </li>
+          </ul>
+        </nav>
+        <main class="content">
+          <TopicView v-if="selected" :topic="selected" />
+          <div v-else class="status muted">Select a topic from the sidebar.</div>
+        </main>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -98,6 +120,12 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header h1 {
   font-size: 1.4rem;
   font-weight: 700;
@@ -109,6 +137,39 @@ header .subtitle {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 0.5rem;
+}
+
+.mode-nav {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--bg);
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.mode-btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.mode-btn:hover {
+  color: var(--text);
+}
+
+.mode-btn.active {
+  background: var(--accent);
+  color: #1a1a2e;
+}
+
+.search-container {
+  flex: 1;
 }
 
 .status {

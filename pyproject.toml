@@ -8,5 +8,21 @@ version = "0.1.0"
 description = "DAS - Data Analysis Scratch research framework"
 requires-python = ">=3.11"
 
+dependencies = [
+    "requests",
+    "pyyaml",
+    "kaggle",
+    "huggingface_hub",
+    "litellm",
+    "boto3",
+    "playwright",
+    "fastapi",
+    "uvicorn[standard]",
+]
+
+[project.scripts]
+das-search = "das.cli.search:main"
+das-server = "das.cli.server:main"
+
 [tool.setuptools.packages.find]
 include = ["das*"]
